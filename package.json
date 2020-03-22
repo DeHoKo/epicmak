@@ -1,19 +1,24 @@
 {
-  "name": "epicmac",
+  "name": "epicmak",
   "version": "1.0.0",
   "description": "simple example of a site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server \"src/\" --files \"src/*.css, src/*.html\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DeHoKo/epicmac.git"
+    "url": "git+https://github.com/DeHoKo/epicmak.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DeHoKo/epicmac/issues"
+    "url": "https://github.com/DeHoKo/epicmak/issues"
   },
-  "homepage": "https://github.com/DeHoKo/epicmac#readme"
+  "homepage": "https://github.com/DeHoKo/epicmak#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7"
+  }
 }
