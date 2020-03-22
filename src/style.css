@@ -68,6 +68,7 @@ button:-moz-focusring,
 :root {
   --bg-color: #f2f2f2;
   --main-bg-color: #d11233;
+  --button-hover-color: #b90f2c;
   --card-bg-color: #ffffff;
   --secondary-font-color: #ffffff;
   --small-font-color: #969696;
@@ -165,6 +166,8 @@ h2 {
   max-width: 100%;
 }
 
+
+
 /* .banner_img {
   border-radius: 34px;
 } */
@@ -200,6 +203,14 @@ h2 {
   height: 286px;
   background: url("./images/backdrop.jpg") no-repeat;
   border-radius: 30px;
+}
+
+.food-photo {
+    transition: transform 0.3s ease;
+}
+
+.food-picture:hover .food-photo {
+    transform: scale(1.07);
 }
 
 .food-description {
@@ -239,6 +250,11 @@ h2 {
   outline: none;
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order_button:hover {
+  background-color: var(--button-hover-color);
 }
 
 .small {
@@ -284,6 +300,11 @@ h2 {
   border: none;
   outline: none;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dinner-order_button:hover {
+    background-color: bisque;
 }
 
 /* FOOD end */
@@ -415,15 +436,15 @@ h2 {
 /* SWIPER-BUTTONS start */
 .swiper-button-prev,
 .swiper-button-next {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .swiper-button-prev {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .swiper-button-next {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .swiper-button-prev.swiper-button-disabled,

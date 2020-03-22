@@ -1,3 +1,4 @@
+// SWIPER start
 const swiper = new Swiper('.swiper-container', {
   centeredSlides: true,
   autoplay: {
@@ -13,3 +14,9 @@ const swiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev',
   },
 });
+// SWIPER end
+// SMOOTH SCROLLING start
+const scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 300
+});
+// SMOOTH SCROLLING end
