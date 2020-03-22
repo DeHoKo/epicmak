@@ -108,7 +108,19 @@ h2 {
   border-radius: 22px;
   background-color: var(--main-bg-color);
   margin-top: 20px;
+  transition: border-radius 0.3s ease;
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    left: calc(50% - 460px);
+    z-index: 10;
+    border-bottom: 2px solid white;
+    border-radius: 0;
+}
+
 
 .header-menu {
   display: flex;

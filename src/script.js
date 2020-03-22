@@ -20,3 +20,15 @@ const scroll = new SmoothScroll('a[href*="#"]', {
 	speed: 300
 });
 // SMOOTH SCROLLING end
+// STICKY HEADER start
+window.onscroll = function() {myFunction()};
+const header = document.getElementById("header");
+const sticky = header.offsetTop;
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+// STICKY HEADER end
