@@ -1,0 +1,19 @@
+{
+  "name": "epicmac",
+  "version": "1.0.0",
+  "description": "simple example of a site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeHoKo/epicmac.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeHoKo/epicmac/issues"
+  },
+  "homepage": "https://github.com/DeHoKo/epicmac#readme"
+}
