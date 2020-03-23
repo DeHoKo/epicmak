@@ -85,9 +85,9 @@ body {
 }
 
 .wrapper {
-  width: 920px;
-  /* width: 1008px; */
-  /* padding: 0 44px; */
+  /* width: 920px; */
+  width: 1008px;
+  padding: 0 44px;
   margin: 0 auto;
 }
 
@@ -109,6 +109,7 @@ h2 {
   background-color: var(--main-bg-color);
   margin-top: 20px;
   transition: border-radius 0.3s ease;
+  max-width: 920px;
 }
 
 .sticky {
@@ -178,8 +179,13 @@ h2 {
   max-width: 100%;
 }
 
+.banner-button-prev {
+  margin-right: 10px;
+}
 
-
+.banner-button-next {
+  margin-left: 10px;
+}
 /* .banner_img {
   border-radius: 34px;
 } */
@@ -188,6 +194,7 @@ h2 {
 
 /* FOOD start */
 .food {
+  position: relative;
   margin-top: 80px;
 }
 
@@ -198,8 +205,28 @@ h2 {
 
 .food-slider {
   display: flex;
+  position: relative;
   justify-content: space-between;
   margin-top: 22px;
+}
+
+.slider-arrow-prev, .slider-arrow-next {
+  position: absolute;
+  top: 237px;
+  outline: none;
+  border: none;
+}
+
+.slider-arrow-prev {
+  left: calc(-27px - 19px);
+}
+
+.slider-arrow-next {
+  right: calc(-27px - 19px);
+}
+
+.sushi-button {
+  top: 824px;
 }
 
 .food-card {
@@ -399,7 +426,7 @@ h2 {
 /* BACKDROP start */
 
 /* SWIPER start */
-.swiper-container {
+.swiper-container, .swiper-container2, .swiper-container3, .swiper-container4, .swiper-container5, .swiper-container6, .swiper-container7 {
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -449,14 +476,6 @@ h2 {
 .swiper-button-prev,
 .swiper-button-next {
   cursor: pointer;
-}
-
-.swiper-button-prev {
-  margin-right: 10px;
-}
-
-.swiper-button-next {
-  margin-left: 10px;
 }
 
 .swiper-button-prev.swiper-button-disabled,

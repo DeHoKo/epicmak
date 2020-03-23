@@ -11,7 +11,10 @@
     />
     <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> -->
     <script defer src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"
+    ></script>
     <script defer src="./src/script.js"></script>
   </head>
   <body>
@@ -70,7 +73,7 @@
           </div>
         </div>
         <div class="banner_navigation">
-          <div class="swiper-button-prev">
+          <div class="swiper-button-prev banner-button-prev" id="button1-prev">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="8"
@@ -100,7 +103,7 @@
             </svg>
           </div>
           <div class="swiper-pagination"></div>
-          <div class="swiper-button-next">
+          <div class="swiper-button-next banner-button-next" id="button1-next">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="8"
@@ -137,154 +140,343 @@
         <h2 class="title">
           Шаурма
         </h2>
-        <div class="food-slider">
-          <div class="food-slider-item">
-            <div class="food-card">
-              <div class="food-picture">
-                <img
-                  src="./src/images/food/food_mini.png"
-                  alt="мини шаурма"
-                  class="food-photo"
-                />
+        <div class="swiper-container2">
+          <div class="food-slider swiper-wrapper">
+            <div class="food-slider-item swiper-slide">
+              <div class="food-card">
+                <div class="food-picture">
+                  <img
+                    src="./src/images/food/food_mini.png"
+                    alt="мини шаурма"
+                    class="food-photo"
+                  />
+                </div>
+                <div class="food-description">
+                  <p class="food-description-title">
+                    Мини
+                  </p>
+                  <button class="food-description-nutrition_facts">
+                    Состав
+                  </button>
+                  <p class="food-description-price">
+                    6.50р
+                  </p>
+                </div>
               </div>
-              <div class="food-description">
-                <p class="food-description-title">
-                  Мини
-                </p>
-                <button class="food-description-nutrition_facts">
-                  Состав
-                </button>
-                <p class="food-description-price">
-                  6.50р
-                </p>
-              </div>
+              <button class="order_button">Заказать</button>
             </div>
-            <button class="order_button">Заказать</button>
-          </div>
-          <div class="food-slider-item">
-            <div class="food-card">
-              <div class="food-picture">
-                <img
-                  src="./src/images/food/food_mini.png"
-                  alt="детская шаурма"
-                  class="food-photo"
-                />
+            <div class="food-slider-item swiper-slide">
+              <div class="food-card">
+                <div class="food-picture">
+                  <img
+                    src="./src/images/food/food_mini.png"
+                    alt="детская шаурма"
+                    class="food-photo"
+                  />
+                </div>
+                <div class="food-description">
+                  <p class="food-description-title">
+                    Детская
+                  </p>
+                  <button class="food-description-nutrition_facts">
+                    Состав
+                  </button>
+                  <p class="food-description-price">
+                    4.50р
+                  </p>
+                </div>
               </div>
-              <div class="food-description">
-                <p class="food-description-title">
-                  Детская
-                </p>
-                <button class="food-description-nutrition_facts">
-                  Состав
-                </button>
-                <p class="food-description-price">
-                  4.50р
-                </p>
-              </div>
+              <button class="order_button">Заказать</button>
             </div>
-            <button class="order_button">Заказать</button>
-          </div>
-          <div class="food-slider-item">
-            <div class="food-card">
-              <div class="food-picture">
-                <img
-                  src="./src/images/food/food_mini.png"
-                  alt="стандартная шаурма"
-                  class="food-photo"
-                />
+            <div class="food-slider-item swiper-slide">
+              <div class="food-card">
+                <div class="food-picture">
+                  <img
+                    src="./src/images/food/food_mini.png"
+                    alt="стандартная шаурма"
+                    class="food-photo"
+                  />
+                </div>
+                <div class="food-description">
+                  <p class="food-description-title">
+                    Стандарт
+                  </p>
+                  <button class="food-description-nutrition_facts">
+                    Состав
+                  </button>
+                  <p class="food-description-price">
+                    8.50р
+                  </p>
+                </div>
               </div>
-              <div class="food-description">
-                <p class="food-description-title">
-                  Стандарт
-                </p>
-                <button class="food-description-nutrition_facts">
-                  Состав
-                </button>
-                <p class="food-description-price">
-                  8.50р
-                </p>
-              </div>
+              <button class="order_button">Заказать</button>
             </div>
-            <button class="order_button">Заказать</button>
+            <div class="food-slider-item swiper-slide">
+              <div class="food-card">
+                <div class="food-picture">
+                  <img
+                    src="./src/images/food/food_mini.png"
+                    alt="стандартная шаурма"
+                    class="food-photo"
+                  />
+                </div>
+                <div class="food-description">
+                  <p class="food-description-title">
+                    Стандарт
+                  </p>
+                  <button class="food-description-nutrition_facts">
+                    Состав
+                  </button>
+                  <p class="food-description-price">
+                    8.50р
+                  </p>
+                </div>
+              </div>
+              <button class="order_button">Заказать</button>
+            </div>
+            <div class="food-slider-item swiper-slide">
+              <div class="food-card">
+                <div class="food-picture">
+                  <img
+                    src="./src/images/food/food_mini.png"
+                    alt="стандартная шаурма"
+                    class="food-photo"
+                  />
+                </div>
+                <div class="food-description">
+                  <p class="food-description-title">
+                    Стандарт
+                  </p>
+                  <button class="food-description-nutrition_facts">
+                    Состав
+                  </button>
+                  <p class="food-description-price">
+                    8.50р
+                  </p>
+                </div>
+              </div>
+              <button class="order_button">Заказать</button>
+            </div>
           </div>
+        </div>
+        <div class="swiper-button-prev slider-arrow-prev" id="button2-prev">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="19"
+            height="45"
+            viewBox="0 0 19 45"
+          >
+            <defs>
+              <clipPath id="it16a">
+                <path
+                  fill="#fff"
+                  d="M17.699.812L5.428 12.477c-5.647 5.37-5.647 14.075 0 19.444l12.27 11.666"
+                />
+              </clipPath>
+            </defs>
+            <g>
+              <g>
+                <path
+                  fill="none"
+                  stroke="#bebebe"
+                  stroke-miterlimit="20"
+                  stroke-width="4"
+                  d="M17.699.812L5.428 12.477c-5.647 5.37-5.647 14.075 0 19.444l12.27 11.666"
+                  clip-path='url("#it16a")'
+                />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="swiper-button-next slider-arrow-next" id="button2-next">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="45"
+            viewBox="0 0 20 45"
+          >
+            <defs>
+              <clipPath id="zk6wa">
+                <path
+                  fill="#fff"
+                  d="M1.436 1.555L13.91 13.149c5.741 5.337 5.741 13.989 0 19.325L1.436 44.068"
+                />
+              </clipPath>
+            </defs>
+            <g>
+              <g>
+                <path
+                  fill="none"
+                  stroke="#bebebe"
+                  stroke-miterlimit="20"
+                  stroke-width="4"
+                  d="M1.436 1.555L13.91 13.149c5.741 5.337 5.741 13.989 0 19.325L1.436 44.068"
+                  clip-path='url("#zk6wa")'
+                />
+              </g>
+            </g>
+          </svg>
         </div>
       </div>
       <!-- FOOD (шаурма) end -->
-      <!--   -->
+      <!-- FOOD (бургеры) start  -->
       <div class="food" id="burgers">
         <h2 class="title">
           Бургеры
         </h2>
-        <div class="food-slider">
-          <div class="food-slider-item">
-            <div class="food-card">
-              <div class="food-picture">
-                <img
-                  src="./src/images/food/food_hamb.png"
-                  alt="гамбургер"
-                  class="food-photo"
-                />
+        <div class="swiper-container3">
+          <div class="food-slider swiper-wrapper">
+            <div class="food-slider-item swiper-slide">
+              <div class="food-card">
+                <div class="food-picture">
+                  <img
+                    src="./src/images/food/food_hamb.png"
+                    alt="гамбургер"
+                    class="food-photo"
+                  />
+                </div>
+                <div class="food-description">
+                  <p class="food-description-title">
+                    Гамбургер
+                  </p>
+                  <button class="food-description-nutrition_facts">
+                    Состав
+                  </button>
+                  <p class="food-description-price">
+                    3.50р
+                  </p>
+                </div>
               </div>
-              <div class="food-description">
-                <p class="food-description-title">
-                  Гамбургер
-                </p>
-                <button class="food-description-nutrition_facts">
-                  Состав
-                </button>
-                <p class="food-description-price">
-                  3.50р
-                </p>
-              </div>
+              <button class="order_button">Заказать</button>
             </div>
-            <button class="order_button">Заказать</button>
-          </div>
-          <div class="food-slider-item">
-            <div class="food-card">
-              <div class="food-picture">
-                <img
-                  src="./src/images/food/epic-humb.png"
-                  alt="эпик бургер"
-                  class="food-photo"
-                />
+            <div class="food-slider-item swiper-slide">
+              <div class="food-card">
+                <div class="food-picture">
+                  <img
+                    src="./src/images/food/epic-humb.png"
+                    alt="эпик бургер"
+                    class="food-photo"
+                  />
+                </div>
+                <div class="food-description">
+                  <p class="food-description-title">
+                    Epik - Бургер
+                  </p>
+                  <button class="food-description-nutrition_facts">
+                    Состав
+                  </button>
+                  <p class="food-description-price">
+                    7.00р
+                  </p>
+                </div>
               </div>
-              <div class="food-description">
-                <p class="food-description-title">
-                  Epik - Бургер
-                </p>
-                <button class="food-description-nutrition_facts">
-                  Состав
-                </button>
-                <p class="food-description-price">
-                  7.00р
-                </p>
-              </div>
+              <button class="order_button">Заказать</button>
             </div>
-            <button class="order_button">Заказать</button>
-          </div>
-          <div class="food-slider-item">
-            <div class="food-card">
-              <div class="food-picture">
-                <img
-                  src="./src/images/food/food_dog.png"
-                  alt="френч дог"
-                  class="food-photo"
-                />
+            <div class="food-slider-item swiper-slide">
+              <div class="food-card">
+                <div class="food-picture">
+                  <img
+                    src="./src/images/food/food_dog.png"
+                    alt="френч дог"
+                    class="food-photo"
+                  />
+                </div>
+                <div class="food-description">
+                  <p class="food-description-title">
+                    Френч-дог
+                  </p>
+                  <button class="food-description-nutrition_facts">
+                    Состав
+                  </button>
+                  <p class="food-description-price">
+                    4.00р
+                  </p>
+                </div>
               </div>
-              <div class="food-description">
-                <p class="food-description-title">
-                  Френч-дог
-                </p>
-                <button class="food-description-nutrition_facts">
-                  Состав
-                </button>
-                <p class="food-description-price">
-                  4.00р
-                </p>
-              </div>
+              <button class="order_button">Заказать</button>
             </div>
-            <button class="order_button">Заказать</button>
+            <div class="food-slider-item swiper-slide">
+              <div class="food-card">
+                <div class="food-picture">
+                  <img
+                    src="./src/images/food/food_dog.png"
+                    alt="френч дог"
+                    class="food-photo"
+                  />
+                </div>
+                <div class="food-description">
+                  <p class="food-description-title">
+                    Френч-дог
+                  </p>
+                  <button class="food-description-nutrition_facts">
+                    Состав
+                  </button>
+                  <p class="food-description-price">
+                    4.00р
+                  </p>
+                </div>
+              </div>
+              <button class="order_button">Заказать</button>
+            </div>
           </div>
+        </div>
+        <div class="swiper-button-prev slider-arrow-prev" id="button3-prev">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="19"
+            height="45"
+            viewBox="0 0 19 45"
+          >
+            <defs>
+              <clipPath id="it16a">
+                <path
+                  fill="#fff"
+                  d="M17.699.812L5.428 12.477c-5.647 5.37-5.647 14.075 0 19.444l12.27 11.666"
+                />
+              </clipPath>
+            </defs>
+            <g>
+              <g>
+                <path
+                  fill="none"
+                  stroke="#bebebe"
+                  stroke-miterlimit="20"
+                  stroke-width="4"
+                  d="M17.699.812L5.428 12.477c-5.647 5.37-5.647 14.075 0 19.444l12.27 11.666"
+                  clip-path='url("#it16a")'
+                />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="swiper-button-next slider-arrow-next" id="button3-next">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="45"
+            viewBox="0 0 20 45"
+          >
+            <defs>
+              <clipPath id="zk6wa">
+                <path
+                  fill="#fff"
+                  d="M1.436 1.555L13.91 13.149c5.741 5.337 5.741 13.989 0 19.325L1.436 44.068"
+                />
+              </clipPath>
+            </defs>
+            <g>
+              <g>
+                <path
+                  fill="none"
+                  stroke="#bebebe"
+                  stroke-miterlimit="20"
+                  stroke-width="4"
+                  d="M1.436 1.555L13.91 13.149c5.741 5.337 5.741 13.989 0 19.325L1.436 44.068"
+                  clip-path='url("#zk6wa")'
+                />
+              </g>
+            </g>
+          </svg>
         </div>
       </div>
       <!-- FOOD (бургеры) end -->
@@ -293,76 +485,159 @@
         <h2 class="title">
           Сеты, фри
         </h2>
-        <div class="food-slider">
-          <div class="food-slider-item">
-            <div class="food-card">
-              <div class="food-picture">
-                <img
-                  src="./src/images/food/food_epic.png"
-                  alt="эпик ланч"
-                  class="food-photo"
-                />
+        <div class="swiper-container4">
+          <div class="food-slider swiper-wrapper">
+            <div class="food-slider-item swiper-slide">
+              <div class="food-card">
+                <div class="food-picture">
+                  <img
+                    src="./src/images/food/food_epic.png"
+                    alt="эпик ланч"
+                    class="food-photo"
+                  />
+                </div>
+                <div class="food-description">
+                  <p class="food-description-title">
+                    Эпик - ланч
+                  </p>
+                  <button class="food-description-nutrition_facts">
+                    Состав
+                  </button>
+                  <p class="food-description-price">
+                    5.70р
+                  </p>
+                </div>
               </div>
-              <div class="food-description">
-                <p class="food-description-title">
-                  Эпик - ланч
-                </p>
-                <button class="food-description-nutrition_facts">
-                  Состав
-                </button>
-                <p class="food-description-price">
-                  5.70р
-                </p>
-              </div>
+              <button class="order_button">Заказать</button>
             </div>
-            <button class="order_button">Заказать</button>
-          </div>
-          <div class="food-slider-item">
-            <div class="food-card">
-              <div class="food-picture">
-                <img
-                  src="./src/images/food/food_trio.png"
-                  alt="эпик три (маленький)"
-                  class="food-photo"
-                />
+            <div class="food-slider-item swiper-slide">
+              <div class="food-card">
+                <div class="food-picture">
+                  <img
+                    src="./src/images/food/food_trio.png"
+                    alt="эпик три (маленький)"
+                    class="food-photo"
+                  />
+                </div>
+                <div class="food-description">
+                  <p class="food-description-title">
+                    Epic-трио <span class="small">маленький</span>
+                  </p>
+                  <button class="food-description-nutrition_facts">
+                    Состав
+                  </button>
+                  <p class="food-description-price">
+                    5.70р
+                  </p>
+                </div>
               </div>
-              <div class="food-description">
-                <p class="food-description-title">
-                  Epic-трио <span class="small">маленький</span>
-                </p>
-                <button class="food-description-nutrition_facts">
-                  Состав
-                </button>
-                <p class="food-description-price">
-                  5.70р
-                </p>
-              </div>
+              <button class="order_button">Заказать</button>
             </div>
-            <button class="order_button">Заказать</button>
-          </div>
-          <div class="food-slider-item">
-            <div class="food-card">
-              <div class="food-picture">
-                <img
-                  src="./src/images/food/food_trio_big.png"
-                  alt="эпик трио (большой)"
-                  class="food-photo"
-                />
+            <div class="food-slider-item swiper-slide">
+              <div class="food-card">
+                <div class="food-picture">
+                  <img
+                    src="./src/images/food/food_trio_big.png"
+                    alt="эпик трио (большой)"
+                    class="food-photo"
+                  />
+                </div>
+                <div class="food-description">
+                  <p class="food-description-title">
+                    Epic-трио <span class="small">большой</span>
+                  </p>
+                  <button class="food-description-nutrition_facts">
+                    Состав
+                  </button>
+                  <p class="food-description-price">
+                    9.30р
+                  </p>
+                </div>
               </div>
-              <div class="food-description">
-                <p class="food-description-title">
-                  Epic-трио <span class="small">большой</span>
-                </p>
-                <button class="food-description-nutrition_facts">
-                  Состав
-                </button>
-                <p class="food-description-price">
-                  9.30р
-                </p>
-              </div>
+              <button class="order_button">Заказать</button>
             </div>
-            <button class="order_button">Заказать</button>
+            <div class="food-slider-item swiper-slide">
+              <div class="food-card">
+                <div class="food-picture">
+                  <img
+                    src="./src/images/food/food_trio_big.png"
+                    alt="эпик трио (большой)"
+                    class="food-photo"
+                  />
+                </div>
+                <div class="food-description">
+                  <p class="food-description-title">
+                    Epic-трио <span class="small">большой</span>
+                  </p>
+                  <button class="food-description-nutrition_facts">
+                    Состав
+                  </button>
+                  <p class="food-description-price">
+                    9.30р
+                  </p>
+                </div>
+              </div>
+              <button class="order_button">Заказать</button>
+            </div>
           </div>
+        </div>
+        <div class="swiper-button-prev slider-arrow-prev" id="button4-prev">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="19"
+            height="45"
+            viewBox="0 0 19 45"
+          >
+            <defs>
+              <clipPath id="it16a">
+                <path
+                  fill="#fff"
+                  d="M17.699.812L5.428 12.477c-5.647 5.37-5.647 14.075 0 19.444l12.27 11.666"
+                />
+              </clipPath>
+            </defs>
+            <g>
+              <g>
+                <path
+                  fill="none"
+                  stroke="#bebebe"
+                  stroke-miterlimit="20"
+                  stroke-width="4"
+                  d="M17.699.812L5.428 12.477c-5.647 5.37-5.647 14.075 0 19.444l12.27 11.666"
+                  clip-path='url("#it16a")'
+                />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="swiper-button-next slider-arrow-next" id="button4-next">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="45"
+            viewBox="0 0 20 45"
+          >
+            <defs>
+              <clipPath id="zk6wa">
+                <path
+                  fill="#fff"
+                  d="M1.436 1.555L13.91 13.149c5.741 5.337 5.741 13.989 0 19.325L1.436 44.068"
+                />
+              </clipPath>
+            </defs>
+            <g>
+              <g>
+                <path
+                  fill="none"
+                  stroke="#bebebe"
+                  stroke-miterlimit="20"
+                  stroke-width="4"
+                  d="M1.436 1.555L13.91 13.149c5.741 5.337 5.741 13.989 0 19.325L1.436 44.068"
+                  clip-path='url("#zk6wa")'
+                />
+              </g>
+            </g>
+          </svg>
         </div>
       </div>
       <!-- FOOD (Сеты, фри) end -->
@@ -371,147 +646,319 @@
         <h2 class="title">
           Суши
         </h2>
-        <div class="food-slider">
-          <div class="food-slider-item">
-            <div class="food-card">
-              <div class="food-picture">
-                <img
-                  src="./src/images/food/food_fila.png"
-                  alt="филадельфия"
-                  class="food-photo"
-                />
+        <div class="swiper-container5">
+          <div class="food-slider swiper-wrapper">
+            <div class="food-slider-item swiper-slide">
+              <div class="food-card">
+                <div class="food-picture">
+                  <img
+                    src="./src/images/food/food_fila.png"
+                    alt="филадельфия"
+                    class="food-photo"
+                  />
+                </div>
+                <div class="food-description">
+                  <p class="food-description-title">
+                    Филадельфия
+                  </p>
+                  <button class="food-description-nutrition_facts">
+                    Состав
+                  </button>
+                  <p class="food-description-price">
+                    6.65р <span class="sale">9.50р</span>
+                  </p>
+                </div>
               </div>
-              <div class="food-description">
-                <p class="food-description-title">
-                  Филадельфия
-                </p>
-                <button class="food-description-nutrition_facts">
-                  Состав
-                </button>
-                <p class="food-description-price">
-                  6.65р <span class="sale">9.50р</span>
-                </p>
-              </div>
+              <button class="order_button">Заказать</button>
             </div>
-            <button class="order_button">Заказать</button>
-          </div>
-          <div class="food-slider-item">
-            <div class="food-card">
-              <div class="food-picture">
-                <img
-                  src="./src/images/food/food_cantr.png"
-                  alt="кантри"
-                  class="food-photo"
-                />
+            <div class="food-slider-item swiper-slide">
+              <div class="food-card">
+                <div class="food-picture">
+                  <img
+                    src="./src/images/food/food_cantr.png"
+                    alt="кантри"
+                    class="food-photo"
+                  />
+                </div>
+                <div class="food-description">
+                  <p class="food-description-title">
+                    Кантри
+                  </p>
+                  <button class="food-description-nutrition_facts">
+                    Состав
+                  </button>
+                  <p class="food-description-price">
+                    4.90р <span class="sale">7.00р</span>
+                  </p>
+                </div>
               </div>
-              <div class="food-description">
-                <p class="food-description-title">
-                  Кантри
-                </p>
-                <button class="food-description-nutrition_facts">
-                  Состав
-                </button>
-                <p class="food-description-price">
-                  4.90р <span class="sale">7.00р</span>
-                </p>
-              </div>
+              <button class="order_button">Заказать</button>
             </div>
-            <button class="order_button">Заказать</button>
-          </div>
-          <div class="food-slider-item">
-            <div class="food-card">
-              <div class="food-picture">
-                <img
-                  src="./src/images/food/food_hava.png"
-                  alt="гавайи"
-                  class="food-photo"
-                />
+            <div class="food-slider-item swiper-slide">
+              <div class="food-card">
+                <div class="food-picture">
+                  <img
+                    src="./src/images/food/food_hava.png"
+                    alt="гавайи"
+                    class="food-photo"
+                  />
+                </div>
+                <div class="food-description">
+                  <p class="food-description-title">
+                    Гавайи
+                  </p>
+                  <button class="food-description-nutrition_facts">
+                    Состав
+                  </button>
+                  <p class="food-description-price">
+                    6.65р <span class="sale">9.50р</span>
+                  </p>
+                </div>
               </div>
-              <div class="food-description">
-                <p class="food-description-title">
-                  Гавайи
-                </p>
-                <button class="food-description-nutrition_facts">
-                  Состав
-                </button>
-                <p class="food-description-price">
-                  6.65р <span class="sale">9.50р</span>
-                </p>
-              </div>
+              <button class="order_button">Заказать</button>
             </div>
-            <button class="order_button">Заказать</button>
+            <div class="food-slider-item swiper-slide">
+              <div class="food-card">
+                <div class="food-picture">
+                  <img
+                    src="./src/images/food/food_hava.png"
+                    alt="гавайи"
+                    class="food-photo"
+                  />
+                </div>
+                <div class="food-description">
+                  <p class="food-description-title">
+                    Гавайи
+                  </p>
+                  <button class="food-description-nutrition_facts">
+                    Состав
+                  </button>
+                  <p class="food-description-price">
+                    6.65р <span class="sale">9.50р</span>
+                  </p>
+                </div>
+              </div>
+              <button class="order_button">Заказать</button>
+            </div>
           </div>
         </div>
-        <div class="food-slider">
-          <div class="food-slider-item">
-            <div class="food-card">
-              <div class="food-picture">
-                <img
-                  src="./src/images/food/food_gurme.png"
-                  alt="сет гурме"
-                  class="food-photo"
+        <div class="swiper-button-prev slider-arrow-prev" id="button5-prev">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="19"
+            height="45"
+            viewBox="0 0 19 45"
+          >
+            <defs>
+              <clipPath id="it16a">
+                <path
+                  fill="#fff"
+                  d="M17.699.812L5.428 12.477c-5.647 5.37-5.647 14.075 0 19.444l12.27 11.666"
                 />
-              </div>
-              <div class="food-description">
-                <p class="food-description-title">
-                  Сет Гурме
-                </p>
-                <button class="food-description-nutrition_facts">
-                  Состав
-                </button>
-                <p class="food-description-price">
-                  29.75р <span class="sale">42.50р</span>
-                </p>
-              </div>
-            </div>
-            <button class="order_button">Заказать</button>
-          </div>
-          <div class="food-slider-item">
-            <div class="food-card">
-              <div class="food-picture">
-                <img
-                  src="./src/images/food/food_hanachi.png"
-                  alt="сет ханачи"
-                  class="food-photo"
+              </clipPath>
+            </defs>
+            <g>
+              <g>
+                <path
+                  fill="none"
+                  stroke="#bebebe"
+                  stroke-miterlimit="20"
+                  stroke-width="4"
+                  d="M17.699.812L5.428 12.477c-5.647 5.37-5.647 14.075 0 19.444l12.27 11.666"
+                  clip-path='url("#it16a")'
                 />
-              </div>
-              <div class="food-description">
-                <p class="food-description-title">
-                  Сет Ханачи
-                </p>
-                <button class="food-description-nutrition_facts">
-                  Состав
-                </button>
-                <p class="food-description-price">
-                  32.55р <span class="sale">46.50р</span>
-                </p>
-              </div>
-            </div>
-            <button class="order_button">Заказать</button>
-          </div>
-          <div class="food-slider-item">
-            <div class="food-card">
-              <div class="food-picture">
-                <img
-                  src="./src/images/food/food_maguro.png"
-                  alt="сет магуро"
-                  class="food-photo"
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="swiper-button-next slider-arrow-next" id="button5-next">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="45"
+            viewBox="0 0 20 45"
+          >
+            <defs>
+              <clipPath id="zk6wa">
+                <path
+                  fill="#fff"
+                  d="M1.436 1.555L13.91 13.149c5.741 5.337 5.741 13.989 0 19.325L1.436 44.068"
                 />
+              </clipPath>
+            </defs>
+            <g>
+              <g>
+                <path
+                  fill="none"
+                  stroke="#bebebe"
+                  stroke-miterlimit="20"
+                  stroke-width="4"
+                  d="M1.436 1.555L13.91 13.149c5.741 5.337 5.741 13.989 0 19.325L1.436 44.068"
+                  clip-path='url("#zk6wa")'
+                />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="swiper-container6">
+          <div class="food-slider swiper-wrapper">
+            <div class="food-slider-item swiper-slide">
+              <div class="food-card">
+                <div class="food-picture">
+                  <img
+                    src="./src/images/food/food_gurme.png"
+                    alt="сет гурме"
+                    class="food-photo"
+                  />
+                </div>
+                <div class="food-description">
+                  <p class="food-description-title">
+                    Сет Гурме
+                  </p>
+                  <button class="food-description-nutrition_facts">
+                    Состав
+                  </button>
+                  <p class="food-description-price">
+                    29.75р <span class="sale">42.50р</span>
+                  </p>
+                </div>
               </div>
-              <div class="food-description">
-                <p class="food-description-title">
-                  Сет Магуро
-                </p>
-                <button class="food-description-nutrition_facts">
-                  Состав
-                </button>
-                <p class="food-description-price">
-                  41.30р <span class="sale">42.50р</span>
-                </p>
-              </div>
+              <button class="order_button">Заказать</button>
             </div>
-            <button class="order_button">Заказать</button>
+            <div class="food-slider-item swiper-slide">
+              <div class="food-card">
+                <div class="food-picture">
+                  <img
+                    src="./src/images/food/food_hanachi.png"
+                    alt="сет ханачи"
+                    class="food-photo"
+                  />
+                </div>
+                <div class="food-description">
+                  <p class="food-description-title">
+                    Сет Ханачи
+                  </p>
+                  <button class="food-description-nutrition_facts">
+                    Состав
+                  </button>
+                  <p class="food-description-price">
+                    32.55р <span class="sale">46.50р</span>
+                  </p>
+                </div>
+              </div>
+              <button class="order_button">Заказать</button>
+            </div>
+            <div class="food-slider-item swiper-slide">
+              <div class="food-card">
+                <div class="food-picture">
+                  <img
+                    src="./src/images/food/food_maguro.png"
+                    alt="сет магуро"
+                    class="food-photo"
+                  />
+                </div>
+                <div class="food-description">
+                  <p class="food-description-title">
+                    Сет Магуро
+                  </p>
+                  <button class="food-description-nutrition_facts">
+                    Состав
+                  </button>
+                  <p class="food-description-price">
+                    41.30р <span class="sale">42.50р</span>
+                  </p>
+                </div>
+              </div>
+              <button class="order_button">Заказать</button>
+            </div>
+            <div class="food-slider-item swiper-slide">
+              <div class="food-card">
+                <div class="food-picture">
+                  <img
+                    src="./src/images/food/food_maguro.png"
+                    alt="сет магуро"
+                    class="food-photo"
+                  />
+                </div>
+                <div class="food-description">
+                  <p class="food-description-title">
+                    Сет Магуро
+                  </p>
+                  <button class="food-description-nutrition_facts">
+                    Состав
+                  </button>
+                  <p class="food-description-price">
+                    41.30р <span class="sale">42.50р</span>
+                  </p>
+                </div>
+              </div>
+              <button class="order_button">Заказать</button>
+            </div>
           </div>
+        </div>
+        <div
+          class="swiper-button-prev slider-arrow-prev sushi-button"
+          id="button6-prev"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="19"
+            height="45"
+            viewBox="0 0 19 45"
+          >
+            <defs>
+              <clipPath id="it16a">
+                <path
+                  fill="#fff"
+                  d="M17.699.812L5.428 12.477c-5.647 5.37-5.647 14.075 0 19.444l12.27 11.666"
+                />
+              </clipPath>
+            </defs>
+            <g>
+              <g>
+                <path
+                  fill="none"
+                  stroke="#bebebe"
+                  stroke-miterlimit="20"
+                  stroke-width="4"
+                  d="M17.699.812L5.428 12.477c-5.647 5.37-5.647 14.075 0 19.444l12.27 11.666"
+                  clip-path='url("#it16a")'
+                />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div
+          class="swiper-button-next slider-arrow-next sushi-button"
+          id="button6-next"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="45"
+            viewBox="0 0 20 45"
+          >
+            <defs>
+              <clipPath id="zk6wa">
+                <path
+                  fill="#fff"
+                  d="M1.436 1.555L13.91 13.149c5.741 5.337 5.741 13.989 0 19.325L1.436 44.068"
+                />
+              </clipPath>
+            </defs>
+            <g>
+              <g>
+                <path
+                  fill="none"
+                  stroke="#bebebe"
+                  stroke-miterlimit="20"
+                  stroke-width="4"
+                  d="M1.436 1.555L13.91 13.149c5.741 5.337 5.741 13.989 0 19.325L1.436 44.068"
+                  clip-path='url("#zk6wa")'
+                />
+              </g>
+            </g>
+          </svg>
         </div>
       </div>
       <!-- FOOD (суши) end -->
@@ -520,67 +967,147 @@
         <h2 class="title">
           Напитки
         </h2>
-        <div class="food-slider">
-          <div class="food-slider-item">
-            <div class="food-card">
-              <div class="food-picture">
-                <img
-                  src="./src/images/food/food_cola.png"
-                  alt="кока-кола"
-                  class="food-photo"
-                />
+        <div class="swiper-container7">
+          <div class="food-slider swiper-wrapper">
+            <div class="food-slider-item swiper-slide">
+              <div class="food-card">
+                <div class="food-picture">
+                  <img
+                    src="./src/images/food/food_cola.png"
+                    alt="кока-кола"
+                    class="food-photo"
+                  />
+                </div>
+                <div class="food-description">
+                  <p class="food-description-title">
+                    Кока-кола
+                  </p>
+                  <p class="food-description-price">
+                    1.90р
+                  </p>
+                </div>
               </div>
-              <div class="food-description">
-                <p class="food-description-title">
-                  Кока-кола
-                </p>
-                <p class="food-description-price">
-                  1.90р
-                </p>
-              </div>
+              <button class="order_button">Заказать</button>
             </div>
-            <button class="order_button">Заказать</button>
-          </div>
-          <div class="food-slider-item">
-            <div class="food-card">
-              <div class="food-picture">
-                <img
-                  src="./src/images/food/food_sprite.png"
-                  alt="спрайт"
-                  class="food-photo"
-                />
+            <div class="food-slider-item swiper-slide">
+              <div class="food-card">
+                <div class="food-picture">
+                  <img
+                    src="./src/images/food/food_sprite.png"
+                    alt="спрайт"
+                    class="food-photo"
+                  />
+                </div>
+                <div class="food-description">
+                  <p class="food-description-title">
+                    Спрайт
+                  </p>
+                  <p class="food-description-price">
+                    1.90р
+                  </p>
+                </div>
               </div>
-              <div class="food-description">
-                <p class="food-description-title">
-                  Спрайт
-                </p>
-                <p class="food-description-price">
-                  1.90р
-                </p>
-              </div>
+              <button class="order_button">Заказать</button>
             </div>
-            <button class="order_button">Заказать</button>
-          </div>
-          <div class="food-slider-item">
-            <div class="food-card">
-              <div class="food-picture">
-                <img
-                  src="./src/images/food/food_fanta.png"
-                  alt="фанта"
-                  class="food-photo"
-                />
+            <div class="food-slider-item swiper-slide">
+              <div class="food-card">
+                <div class="food-picture">
+                  <img
+                    src="./src/images/food/food_fanta.png"
+                    alt="фанта"
+                    class="food-photo"
+                  />
+                </div>
+                <div class="food-description">
+                  <p class="food-description-title">
+                    Фанта
+                  </p>
+                  <p class="food-description-price">
+                    1.90р
+                  </p>
+                </div>
               </div>
-              <div class="food-description">
-                <p class="food-description-title">
-                  Фанта
-                </p>
-                <p class="food-description-price">
-                  1.90р
-                </p>
-              </div>
+              <button class="order_button">Заказать</button>
             </div>
-            <button class="order_button">Заказать</button>
+            <div class="food-slider-item swiper-slide">
+              <div class="food-card">
+                <div class="food-picture">
+                  <img
+                    src="./src/images/food/food_fanta.png"
+                    alt="фанта"
+                    class="food-photo"
+                  />
+                </div>
+                <div class="food-description">
+                  <p class="food-description-title">
+                    Фанта
+                  </p>
+                  <p class="food-description-price">
+                    1.90р
+                  </p>
+                </div>
+              </div>
+              <button class="order_button">Заказать</button>
+            </div>
           </div>
+        </div>
+        <div class="swiper-button-prev slider-arrow-prev" id="button7-prev">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="19"
+            height="45"
+            viewBox="0 0 19 45"
+          >
+            <defs>
+              <clipPath id="it16a">
+                <path
+                  fill="#fff"
+                  d="M17.699.812L5.428 12.477c-5.647 5.37-5.647 14.075 0 19.444l12.27 11.666"
+                />
+              </clipPath>
+            </defs>
+            <g>
+              <g>
+                <path
+                  fill="none"
+                  stroke="#bebebe"
+                  stroke-miterlimit="20"
+                  stroke-width="4"
+                  d="M17.699.812L5.428 12.477c-5.647 5.37-5.647 14.075 0 19.444l12.27 11.666"
+                  clip-path='url("#it16a")'
+                />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="swiper-button-next slider-arrow-next" id="button7-next">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="45"
+            viewBox="0 0 20 45"
+          >
+            <defs>
+              <clipPath id="zk6wa">
+                <path
+                  fill="#fff"
+                  d="M1.436 1.555L13.91 13.149c5.741 5.337 5.741 13.989 0 19.325L1.436 44.068"
+                />
+              </clipPath>
+            </defs>
+            <g>
+              <g>
+                <path
+                  fill="none"
+                  stroke="#bebebe"
+                  stroke-miterlimit="20"
+                  stroke-width="4"
+                  d="M1.436 1.555L13.91 13.149c5.741 5.337 5.741 13.989 0 19.325L1.436 44.068"
+                  clip-path='url("#zk6wa")'
+                />
+              </g>
+            </g>
+          </svg>
         </div>
       </div>
       <!-- FOOD (напитки) end -->

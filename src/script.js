@@ -10,8 +10,56 @@ const swiper = new Swiper('.swiper-container', {
     clickable: true,
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '#button1-next',
+    prevEl: '#button1-prev',
+  },
+});
+const swiper2 = new Swiper('.swiper-container2', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '#button2-next',
+    prevEl: '#button2-prev',
+  },
+});
+const swiper3 = new Swiper('.swiper-container3', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '#button3-next',
+    prevEl: '#button3-prev',
+  },
+});
+const swiper4 = new Swiper('.swiper-container4', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '#button4-next',
+    prevEl: '#button4-prev',
+  },
+});
+const swiper5 = new Swiper('.swiper-container5', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '#button5-next',
+    prevEl: '#button5-prev',
+  },
+});
+const swiper6 = new Swiper('.swiper-container6', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '#button6-next',
+    prevEl: '#button6-prev',
+  },
+});
+const swiper7 = new Swiper('.swiper-container7', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '#button7-next',
+    prevEl: '#button7-prev',
   },
 });
 // SWIPER end
